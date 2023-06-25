@@ -1,0 +1,14 @@
+vim.opt.number = true
+vim.opt.mouse = 'a'
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = true
+vim.opt.wrap = true
+vim.opt.breakindent = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = false
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 0
+vim.opt.encoding = 'UTF-8'
+vim.opt.termguicolors = true
