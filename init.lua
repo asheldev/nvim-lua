@@ -68,3 +68,6 @@ require('executor').setup({
    	height = vim.o.lines - 20,
 	}
 })
+
+-- TMUX.nvim
+require('tmux').setup()

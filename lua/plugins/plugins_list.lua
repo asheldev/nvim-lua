@@ -29,5 +29,6 @@ return {
 			'MunifTanjim/nui.nvim'
 		}
 	},
+	{'aserowy/tmux.nvim'},
 }
 
