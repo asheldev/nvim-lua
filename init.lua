@@ -83,7 +83,8 @@ require('bufferline').setup({
 				filetype = 'NvimTree',
 				text = 'Project Files',
 				text_align = 'center',
-				separator = true
+				separator = true,
+        highlight = 'Directory',
 			}
 		},
 		color_icons = true,

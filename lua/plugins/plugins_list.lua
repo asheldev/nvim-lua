@@ -29,7 +29,10 @@ return {
 			'MunifTanjim/nui.nvim'
 		}
 	},
-	{'aserowy/tmux.nvim'},
+	{
+		'aserowy/tmux.nvim',
+		config = function() return require("tmux").setup() end
+	},
 	{
 		'akinsho/bufferline.nvim',
 		version = "*",
