@@ -8,5 +8,7 @@ vim.keymap.set({'n', 'x'}, 'x', '_x')
 vim.keymap.set('n', '<C-b>', '<cmd>NvimTreeToggle<cr>', {desc = 'Explorer'})
 
 -- GOOGLE EXECUTOR
-vim.api.nvim_set_keymap('n', '<leader>t', ':ExecutorRun<CR>', {desc = 'Command'})
-vim.api.nvim_set_keymap('n', '<leader>vd', ':ExecutorToggleDetail<CR>', {desc = 'CommandDetail'})
+-- vim.api.nvim_set_keymap('n', '<leader>t', ':ExecutorRun<CR>', {desc = 'Command'})
+-- vim.api.nvim_set_keymap('n', '<leader>vd', ':ExecutorToggleDetail<CR>', {desc = 'CommandDetail'})
+
+-- TELESCOPE
