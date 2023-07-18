@@ -22,6 +22,8 @@ local lspconfig = require('lspconfig')
 
 lspconfig.lua_ls.setup({})
 lspconfig.tsserver.setup({})
+lspconfig.clangd.setup({})
+lspconfig.pylsp.setup({})
 
 -- LSP Completion
 local cmp = require('cmp')
@@ -71,3 +73,28 @@ require('executor').setup({
 
 -- TMUX.nvim
 require('tmux').setup()
+
+-- Bufferline
+require('bufferline').setup({
+	options = {
+		diagnostics = 'nvim_lsp',
+		offsets = {
+			{
+				filetype = 'NvimTree',
+				text = 'Project Files',
+				text_align = 'center',
+				separator = true
+			}
+		},
+		color_icons = true,
+		separator_style = 'slant'
+	}
+})
+
+-- Telescope
+require('telescope').setup()
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
