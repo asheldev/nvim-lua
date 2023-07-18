@@ -29,5 +29,14 @@ return {
 			'MunifTanjim/nui.nvim'
 		}
 	},
+	{
+		'aserowy/tmux.nvim',
+		config = function() return require("tmux").setup() end
+	},
+	{
+		'akinsho/bufferline.nvim',
+		version = "*",
+		dependencies = 'nvim-tree/nvim-web-devicons'
+	},
 }
 

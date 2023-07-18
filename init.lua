@@ -22,6 +22,7 @@ local lspconfig = require('lspconfig')
 
 lspconfig.lua_ls.setup({})
 lspconfig.tsserver.setup({})
+lspconfig.clangd.setup({})
 
 -- LSP Completion
 local cmp = require('cmp')
@@ -66,5 +67,20 @@ require('executor').setup({
 	popup = {
 		width = math.floor(vim.o.columns * 3/5),
    	height = vim.o.lines - 20,
+	}
+})
+
+-- Bufferline
+require('bufferline').setup({
+	options = {
+		separator_style = 'slant',
+		offsets = {
+    	{
+      	filetype = "NvimTree",
+        text = "Project Files",
+        highlight = "Directory",
+      	separator = true
+			}
+    },
 	}
 })
